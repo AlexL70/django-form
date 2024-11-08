@@ -42,3 +42,7 @@ Thank you!
             email_message.send()
             messages.success(request, "Application submitted successfully!")
     return render(request, "index.html")
+
+
+def about(request: HttpRequest) -> HttpResponse:
+    return render(request, "about.html")
